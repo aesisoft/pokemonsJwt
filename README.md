@@ -27,3 +27,31 @@ Il faut également une base de données MySQL ou MariaDB et un client du type Ph
 php bin/console doctrine:database:create
 php bin/console doctrine:migrations:migrate
 php bin/console doctrine:fixtures:load
+```
+
+## Tester avec un client Http
+
+Par exemple avec Postman ...
+
+1. Récupérer le jeton : http://localhost/pokemonsJwt/public/api/login_check
+
+- Methode : POST <br/>
+- Url : http://localhost/pokemonsJwt/public/api/login_check <br/>
+- Body en raw JSON : 
+
+    ```JSON
+    {
+    "username":"angular",
+    "password":"angular2020"
+    }
+    ```
+
+2. Accéder à l'API avec le token récupéré :
+
+- Methode : GET <br/>
+- Url : http://localhost/pokemonsJwt/public/api/pokemon.json <br/>
+- Authorization : 
+
+    ```JSON
+    Authorization : Bearer <le token>
+    ```
