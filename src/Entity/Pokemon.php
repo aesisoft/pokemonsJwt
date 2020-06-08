@@ -5,6 +5,8 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\PokemonRepository;
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
@@ -24,6 +26,7 @@ class Pokemon
     /**
      * @ORM\Column(type="string", length=80)
      * @Groups("get:read")
+     * @ApiFilter(SearchFilter::class, strategy="partial")
      */
     private $nom;
 
