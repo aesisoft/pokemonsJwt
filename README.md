@@ -4,8 +4,6 @@ Ce projet est une petite API Web développé avec Symfony5 et ApiPlatform, afin 
 
 C'est la seconde version de l'API sécurisée avec JWT.
 
-___
-
 ## Prerequis
 
 Il est necessaire d'avoir un serveur Apache2 avec PHP de version minimum 7.2.<br/>
