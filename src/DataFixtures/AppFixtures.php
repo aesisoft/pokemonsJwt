@@ -26,8 +26,8 @@ class AppFixtures extends Fixture
         $manager->persist($user);
         $manager->flush();
 
-        $this->addPokemon('Salamèche',  70, 20, ['Normal','Vol'], 'https://www.pokepedia.fr/images/7/7d/Piafabec-RFVF.png', $manager);
-        $this->addPokemon('Piafabec',   60, 10, ['Feu'], 'https://www.pokepedia.fr/images/8/89/Salam%C3%A8che-RFVF.png', $manager);
+        $this->addPokemon('Piafabec',  70, 20, ['Normal','Vol'], 'https://www.pokepedia.fr/images/7/7d/Piafabec-RFVF.png', $manager);
+        $this->addPokemon('Salamèche',   60, 10, ['Feu'], 'https://www.pokepedia.fr/images/8/89/Salam%C3%A8che-RFVF.png', $manager);
         $this->addPokemon('Pikachu',    70, 20, ['Electrik'], 'https://www.pokepedia.fr/images/e/e7/Pikachu-RFVF.png', $manager);
         $this->addPokemon('Couafarel',  80, 30, ['Normal'], 'https://www.pokepedia.fr/images/0/0e/Couafarel_%28Forme_Sauvage%29-XY.png', $manager);
         $this->addPokemon('Psykokwak',  60, 30, ['Eau'], 'https://www.pokepedia.fr/images/4/44/Psykokwak-RFVF.png', $manager);
